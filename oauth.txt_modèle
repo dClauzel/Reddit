@@ -1,0 +1,14 @@
+# doc : https://github.com/SmBe19/praw-OAuth2Util/blob/master/OAuth2Util/README.md
+
+# Config
+scope=identity,account,edit,flair,history,livemanage,modconfig,modflair,modlog,modothers,modposts,modself,modwiki,mysubreddits,privatemessages,read,report,save,submit,subscribe,vote,wikiedit,wikiread
+refreshable=True
+
+# Appinfo
+app_key=MettreVosInformations
+app_secret=MettreVosInformations
+
+# Token
+token=None
+refresh_token=None
+valid_until=None

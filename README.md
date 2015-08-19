@@ -5,6 +5,7 @@ Les scripts
 -----------
 
 * DémonstrationDeCollecteSimpleDInformations.py : démonstration de collecte simple d’informations — karma, top 5 d’un sousjlailu, liste des bannis d’un sousjlailu
+* InformationsSurSoumissions.py : recherche de mot-clefs dans le titre de soumissions récentes d’un sousjlailu
 
 Dépendances
 -----------

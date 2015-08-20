@@ -37,28 +37,31 @@ sousjlailu = r.get_subreddit("Europe")
 
 
 ##################################
-# 
+# On recherche dans les soumissions récentes celles dont le titre contient un des mot-clefs
 
 
 marqueurs = [
 	"Calais",
+	"integrat",
 	"islam",
 	"migrant",
 	"migration",
 	"racism",
 	"refugee",
-	"xenophobia"
+	"xenophob"
 ]
 
 print("Marqueurs: ", end="")
 print(", ".join(marqueurs))
 print("_____")
 
-for soumission in sousjlailu.get_new(limit=100):
+# pour chaque soumission
+for soumission in sousjlailu.get_new(limit=1000):
 	titre = soumission.title
 	auteur = soumission.author
 	permalien = soumission.permalink
 
+	# si le mot-clef est dans le titre
 	if any(mot.lower() in titre.lower() for mot in marqueurs):
 		print("{0}\n/u/{1}\n{2}\n_____".format(
 			titre,

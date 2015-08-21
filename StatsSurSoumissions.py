@@ -45,6 +45,7 @@ sousjlailu = r.get_subreddit("Europe")
 # mot-clefs recherchés
 marqueurs = [
 	"Calais",
+	"ethni",
 	"integrat",
 	"islam",
 	"migrant",
@@ -56,7 +57,6 @@ marqueurs = [
 
 print("Marqueurs: ", end="")
 print(", ".join(marqueurs))
-print("_____")
 
 # liste des auteurs suspects
 auteurs = []
@@ -65,7 +65,7 @@ auteurs = []
 horaires = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 # pour chaque soumission
-for soumission in sousjlailu.get_new(limit=100):
+for soumission in sousjlailu.get_new(t="day"): # Toutes les soumissions récentes sur 24 heures, max 100 (limite de Reddit)
 	try:
 		titre = soumission.title
 		auteur = soumission.author.name
@@ -83,7 +83,8 @@ for soumission in sousjlailu.get_new(limit=100):
 ####################
 # calculs des scores
 
-print("Horaires : {0}".format(horaires))
+print( "Trouvé {0} soumissions parmi les 100 plus récentes de ces dernières 24 heures".format(len(auteurs)) )
+print( "Horaires : {0}".format(horaires) )
 
 # De la liste des auteurs on crée une collection pour en faire un dictionnaire trié par ordre décroissant sur le nombre de soumissions
 auteursComptés = OrderedDict( sorted(collections.Counter(auteurs).items(), key=lambda t: t[1], reverse=True) ) 

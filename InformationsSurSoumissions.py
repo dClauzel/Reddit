@@ -54,7 +54,7 @@ print(", ".join(marqueurs))
 print("_____")
 
 # pour chaque soumission
-for soumission in sousjlailu.get_new(limit=1000):
+for soumission in sousjlailu.get_new(limit=100): # Max 100
 	try:
 		titre = soumission.title
 		auteur = soumission.author.name

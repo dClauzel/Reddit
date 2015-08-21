@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-### Démonstration de collecte simple d’informations
+### Top des posteurs dont la soumission comporte un mot-clef recherché, avec suivi des horaires des soumissions
 #
-# Nécessite : être modérateur sur un sousjlailu avec au moins 5 soumissions et un compte banni
-#
-##############################################################################################
+###############################################################################################################
 
 import praw
 import OAuth2Util
@@ -44,6 +42,7 @@ sousjlailu = r.get_subreddit("Europe")
 # On recherche dans les soumissions récentes celles dont le titre contient un des mot-clefs
 
 
+# mot-clefs recherchés
 marqueurs = [
 	"Calais",
 	"integrat",

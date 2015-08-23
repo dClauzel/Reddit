@@ -7,7 +7,6 @@
 
 import praw
 import OAuth2Util
-import datetime
 import collections
 from collections import OrderedDict
 from collections import Counter

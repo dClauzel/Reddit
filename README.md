@@ -5,9 +5,9 @@ Les scripts
 -----------
 
 * DémonstrationDeCollecteSimpleDInformations.py : démonstration de collecte simple d’informations — karma, top 5 d’un sousjlailu, liste des bannis d’un sousjlailu
-* InformationsSurSoumissions.py : recherche de mot-clefs dans le titre de soumissions récentes d’un sousjlailu
 * StatsSurSoumissions.py : top des posteurs dont la soumission comporte un mot-clef recherché, avec suivi des horaires des soumissions
 * StatsSurDélistement.py top des posteurs non bannis dont les soumissions et commentaires ont été délistés récemment
+* InformationsSurBannissements.py : liste les comptes bannis d’un sousjlailu
 
 Dépendances
 -----------

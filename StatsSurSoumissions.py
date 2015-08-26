@@ -50,8 +50,10 @@ marqueurs = [
 	"islam",
 	"migrant",
 	"migration",
+	"muslim",
 	"racism",
 	"refugee",
+	"Schengen",
 	"xenophob"
 ]
 

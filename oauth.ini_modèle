@@ -1,0 +1,21 @@
+# doc : https://github.com/SmBe19/praw-OAuth2Util/blob/master/OAuth2Util/README.md
+
+[app]
+scope = account,creddits,edit,flair,history,identity,livemanage,modconfig,modcontributors,modflair,modlog,modothers,modposts,modself,modwiki,mysubreddits,privatemessages,read,report,save,submit,subscribe,vote,wikiedit,wikiread
+refreshable = True
+app_key = MettreVosInformations
+app_secret = MettreVosInformations
+
+[server]
+server_mode = False
+url = 127.0.0.1
+port = 65010
+redirect_path = authorize_callback
+link_path = oauth
+
+# Généré automatiquement
+[token]
+token = None
+refresh_token = None
+valid_until = None
+

@@ -26,7 +26,7 @@ Utilisation
 1. créer un jeton d’authentification
   1. create an App de type `script` on Reddit (https://www.reddit.com/prefs/apps/
   2. définir `redirect uri` à `http://127.0.0.1:65010/authorize_callback`, le reste est libre
-2. renseigner l’authentification des scripts sur Reddit dans le fichier `oauth.txt` (clé et secret)
+2. renseigner l’authentification des scripts sur Reddit dans le fichier `oauth.ini` (clé et secret)
 
 
 Références

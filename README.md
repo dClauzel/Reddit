@@ -9,6 +9,7 @@ Les scripts
 * StatsSurDélistement.py top des posteurs non bannis dont les soumissions et commentaires ont été délistés récemment
 * InformationsSurBannissements.py : liste les comptes bannis d’un sousjlailu
 * BannirEtDélister.py : banni un compte puis déliste ses publications, ou le débannit et valide ses publications
+* SoumissionsDélistées.py : liste les soumissions délistées récemment
 
 Dépendances
 -----------

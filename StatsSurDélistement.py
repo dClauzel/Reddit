@@ -21,7 +21,7 @@ print("Connexion…", end=" ")
 # Il est nécessaire de personnaliser l’user-agent pour suivre les règles de Reddit
 # doc : https://github.com/reddit/reddit/wiki/API
 
-r = praw.Reddit(user_agent="posix:MonScript:v0 (by /u/MonIdentifiantReddit)", site_name="Reddit")
+r = praw.Reddit(user_agent="posix:StatsSurDélistement:v0 (by /u/dClauzel)", site_name="Reddit")
 o = OAuth2Util.OAuth2Util(r, print_log=False)
 o.refresh()
 

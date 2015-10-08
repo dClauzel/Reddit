@@ -10,6 +10,7 @@ Les scripts
 * InformationsSurBannissements.py : liste les comptes bannis d’un sousjlailu
 * BannirEtDélister.py : banni un compte puis déliste ses publications, ou le débannit et valide ses publications
 * SoumissionsDélistées.py : liste les soumissions délistées récemment
+* SoumissionsDélistéesParAutoModerator.py : liste les soumissions délistées par AutoModerator
 
 Dépendances
 -----------
@@ -25,7 +26,7 @@ Utilisation
 -----------
 
 1. créer un jeton d’authentification
-  1. create an App de type `script` on Reddit (https://www.reddit.com/prefs/apps/
+  1. sur Reddit, créer une application de type `script` (https://www.reddit.com/prefs/apps/
   2. définir `redirect uri` à `http://127.0.0.1:65010/authorize_callback`, le reste est libre
 2. renseigner l’authentification des scripts sur Reddit dans le fichier `oauth.ini` (clé et secret)
 
